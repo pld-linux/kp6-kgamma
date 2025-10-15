@@ -7,7 +7,7 @@
 Summary:	kgamma
 Name:		kp6-kgamma
 Version:	6.4.5
-Release:	1
+Release:	2
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/kgamma-%{version}.tar.xz
