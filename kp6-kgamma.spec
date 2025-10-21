@@ -1,17 +1,17 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeplasmaver	6.4.5
+%define		kdeplasmaver	6.5.0
 %define		qtver		5.15.2
 %define		kpname		kgamma
 Summary:	kgamma
 Name:		kp6-kgamma
-Version:	6.4.5
-Release:	2
+Version:	6.5.0
+Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/kgamma-%{version}.tar.xz
-# Source0-md5:	b5067304bb8146631b3ac286cac59499
+# Source0-md5:	a40eec2fa20e5b0653bccdd01065dacc
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel >= %{qtver}
@@ -29,8 +29,8 @@ BuildRequires:	xorg-lib-libXxf86vm-devel
 BuildRequires:	xz
 Requires(post,postun):	desktop-file-utils
 %requires_eq_to Qt6Core Qt6Core-devel
-Obsoletes:	kp6-kgamma5 < 5.93.0
 Obsoletes:	kp5-%{kpname} < 6
+Obsoletes:	kp6-kgamma5 < 5.93.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -71,7 +71,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{kpname}.lang
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/qt6/plugins/plasma/kcminit/kcm_kgamma_init.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/plasma/kcms/systemsettings_qwidgets/kcm_kgamma.so
+%{_libdir}/qt6/plugins/plasma/kcminit/kcm_kgamma_init.so
+%{_libdir}/qt6/plugins/plasma/kcms/systemsettings_qwidgets/kcm_kgamma.so
 %{_desktopdir}/kcm_kgamma.desktop
 %{_datadir}/kgamma
