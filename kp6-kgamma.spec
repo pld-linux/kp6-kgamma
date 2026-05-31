@@ -39,6 +39,13 @@ settings, your display (websites, images, etc.) will look the same on
 your monitor as on other monitors. It allows you to alter the
 monitor's gamma correction of the X-Server. But that's not all to do.
 
+%description -l pl.UTF-8
+Ten moduł to narzędzie do monitorowania korekcji gamma. Przy
+odpowiednich ustawieniach gamma, wyświetlanie (stron internetowych,
+obrazków, itp.) będzie wyglądało tak samo na twoim monitorze, jak na
+innych monitorach. Pozwala ci zmieniać korekcję gamma X-Serwera, ale to
+nie wszystko do zrobienia.
+
 %prep
 %setup -q -n %{kpname}-%{version}
 
