@@ -1,17 +1,17 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeplasmaver	6.7.2
+%define		kdeplasmaver	6.7.3
 %define		qtver		5.15.2
 %define		kpname		kgamma
 Summary:	kgamma
 Name:		kp6-kgamma
-Version:	6.7.2
+Version:	6.7.3
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/kgamma-%{version}.tar.xz
-# Source0-md5:	173e5aefd00d1a1b875769df0b6c22a6
+# Source0-md5:	b5b937d0d8d49cbbd7815ad9e023ce2f
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel >= %{qtver}
